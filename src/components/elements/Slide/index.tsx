@@ -1,37 +1,38 @@
 import { Box, Button, Text, Image, Link } from "@chakra-ui/react";
 import { useState } from "react";
 import { IconFavorite, IconWarning } from "../Icons";
+import { images } from "../../../assets";
 
 const list = [
   {
     title: "Mât vụ phụ hồ 1",
     description: "A working Man 1",
     node: "",
-    image: "/assets/image1.jpg",
+    image: images.image1,
   },
   {
     title: "Super Man",
     description: "Hero",
     node: "",
-    image: "/assets/image2.jpeg",
+    image: images.image2Jpeg,
   },
   {
     title: "Mât vụ phụ hồ 1",
     description: "A working Man 1",
     node: "",
-    image: "/assets/image2.jpg",
+    image: images.image2Jpg,
   },
   {
     title: "Mât vụ phụ hồ 1",
     description: "A working Man 1",
     node: "",
-    image: "/assets/image3.jpg",
+    image: images.image3,
   },
   {
     title: "Mât vụ phụ hồ 1",
     description: "A working Man 1",
     node: "",
-    image: "/assets/image6.jpg",
+    image: images.image6,
   },
 ];
 

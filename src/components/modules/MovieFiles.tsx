@@ -1,3 +1,4 @@
+import { images } from "../../assets";
 import {
   Box,
   Button,
@@ -19,17 +20,17 @@ const bt = [
   {
     icon: "Play",
     title: "Tập 1",
-    image: "/assets/image4.jpg",
+    image: images.image4,
   },
   {
     icon: "Play",
     title: "Tập 2",
-    image: "/assets/image2.jpg",
+    image: images.image2Jpeg,
   },
   {
     icon: "Play",
     title: "Tập 1",
-    image: "/assets/image2.jpg",
+    image: images.image2Jpg,
   },
   {
     icon: "Play",
@@ -141,48 +142,43 @@ export const MovieFiles = () => {
           <Tabs.Root defaultValue="members" variant="plain">
             <Tabs.List rounded="l3" p="1">
               <Tabs.Trigger
-style={{
-    background: "none",
-    color: tab === "projects" ? "#ff89b0" : "#ffffff",
-    borderColor: tab === "projects" ? "white" : "transparent",
-    fontWeight: tab === "projects" ? 600 : 400,
-  }}
+                style={{
+                  background: "none",
+                  color: tab === "projects" ? "#ff89b0" : "#ffffff",
+                  borderColor: tab === "projects" ? "white" : "transparent",
+                  fontWeight: tab === "projects" ? 600 : 400,
+                }}
                 value="projects"
-                
               >
-            <Button
-            size={"2xs"}
-            borderRadius={"4px"}
-            onClick={() => setTab("2")}
-            color={tab === "2" ? "white" : "white"}
-            bg={"#00000000"}
-            border={tab ==="1"? "white" : "none"}
-            
-          >
-            <Icon width={"15px"} as={MdSubtitles}></Icon>
-            <Text fontWeight={"400"}>Phụ đề</Text>
-          </Button>
+                <Button
+                  size={"2xs"}
+                  borderRadius={"4px"}
+                  onClick={() => setTab("2")}
+                  color={tab === "2" ? "white" : "white"}
+                  bg={"#00000000"}
+                  border={tab === "1" ? "white" : "none"}
+                >
+                  <Icon width={"15px"} as={MdSubtitles}></Icon>
+                  <Text fontWeight={"400"}>Phụ đề</Text>
+                </Button>
               </Tabs.Trigger>
               <Tabs.Trigger
                 color={tab === "tasks" ? "#fff " : "#aaa"}
-                border={ tab==="tasks" ? "1px solid #fff " : "1px solid none"}
+                border={tab === "tasks" ? "1px solid #fff " : "1px solid none"}
                 fontWeight={"400"}
                 value="tasks"
                 bgColor={"none "}
               >
-           
-          <Box display={"flex"} alignItems={"center"} gap={"2"}>
-            <Icon color={"#fff"} as={MdSubtitles}></Icon>
-            <Text fontSize={"12px"} color={"#fff"} alignItems={"center"}>
-              Thuyết minh giọng Nam{" "}
-            </Text>
-          </Box> 
+                <Box display={"flex"} alignItems={"center"} gap={"2"}>
+                  <Icon color={"#fff"} as={MdSubtitles}></Icon>
+                  <Text fontSize={"12px"} color={"#fff"} alignItems={"center"}>
+                    Thuyết minh giọng Nam{" "}
+                  </Text>
+                </Box>
               </Tabs.Trigger>
               <Tabs.Indicator rounded="l2" />
             </Tabs.List>
           </Tabs.Root>
-
-          
         </Box>
         <Box
           display={"inline-flex"}

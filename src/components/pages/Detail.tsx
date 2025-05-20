@@ -8,6 +8,7 @@ import { Heart, MessageCircle, Play, Send } from "lucide-react";
 import { IconPlus } from "../elements/Icons";
 import { Comment } from "../modules/Comment";
 import { FlimInfo } from "../modules/FlimInfo";
+import { images } from "../../assets";
 
 export const DetailPage = () => {
   return (
@@ -15,7 +16,7 @@ export const DetailPage = () => {
       <Header></Header>
       <Box as={"main"} gridArea={"main"}>
         <Box
-          bgImage={`url('src/assets/image3.jpg')`}
+          bgImage={`url('${images.image2Jpg}')`}
           backgroundRepeat={"no-repeat"}
           bgSize="cover"
           bgPos="center"
@@ -234,7 +235,7 @@ export const DetailPage = () => {
                 <Tabs.Content value="3">
                   <ListActor></ListActor>
                 </Tabs.Content>
-                <Tabs.Content value="4">////</Tabs.Content>
+                <Tabs.Content value="4"></Tabs.Content>
               </Tabs.Root>
             </Box>
             <Comment></Comment>
