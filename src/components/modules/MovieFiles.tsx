@@ -7,24 +7,29 @@ import {
   Menu,
   Portal,
   Switch,
+  Tabs,
 } from "@chakra-ui/react";
 import { Play } from "lucide-react";
 import { useState } from "react";
 import { HiMenu } from "react-icons/hi";
+
 import { MdSubtitles } from "react-icons/md";
 
 const bt = [
   {
     icon: "Play",
     title: "Tập 1",
+    image: "/assets/image4.jpg",
   },
   {
     icon: "Play",
     title: "Tập 2",
+    image: "/assets/image2.jpg",
   },
   {
     icon: "Play",
     title: "Tập 1",
+    image: "/assets/image2.jpg",
   },
   {
     icon: "Play",
@@ -42,7 +47,7 @@ const bt = [
 
 export const MovieFiles = () => {
   const [checked, setChecked] = useState(false);
-
+  const [tab, setTab] = useState("1");
   return (
     <>
       <Box
@@ -133,16 +138,51 @@ export const MovieFiles = () => {
           borderRadius={"6px"}
           background={"#00000000"}
         >
-          <Button bg={"#00000000"} color={"#fff"} border={"1px solid #fff"}>
+          <Tabs.Root defaultValue="members" variant="plain">
+            <Tabs.List rounded="l3" p="1">
+              <Tabs.Trigger
+style={{
+    background: "none",
+    color: tab === "projects" ? "#ff89b0" : "#ffffff",
+    borderColor: tab === "projects" ? "white" : "transparent",
+    fontWeight: tab === "projects" ? 600 : 400,
+  }}
+                value="projects"
+                
+              >
+            <Button
+            size={"2xs"}
+            borderRadius={"4px"}
+            onClick={() => setTab("2")}
+            color={tab === "2" ? "white" : "white"}
+            bg={"#00000000"}
+            border={tab ==="1"? "white" : "none"}
+            
+          >
             <Icon width={"15px"} as={MdSubtitles}></Icon>
             <Text fontWeight={"400"}>Phụ đề</Text>
           </Button>
+              </Tabs.Trigger>
+              <Tabs.Trigger
+                color={tab === "tasks" ? "#fff " : "#aaa"}
+                border={ tab==="tasks" ? "1px solid #fff " : "1px solid none"}
+                fontWeight={"400"}
+                value="tasks"
+                bgColor={"none "}
+              >
+           
           <Box display={"flex"} alignItems={"center"} gap={"2"}>
             <Icon color={"#fff"} as={MdSubtitles}></Icon>
             <Text fontSize={"12px"} color={"#fff"} alignItems={"center"}>
               Thuyết minh giọng Nam{" "}
             </Text>
-          </Box>
+          </Box> 
+              </Tabs.Trigger>
+              <Tabs.Indicator rounded="l2" />
+            </Tabs.List>
+          </Tabs.Root>
+
+          
         </Box>
         <Box
           display={"inline-flex"}
@@ -177,9 +217,14 @@ export const MovieFiles = () => {
         columnGap={"15px"}
         gap={"4"}
       >
-        {bt.slice(0, 6).map((item) => {
+        {bt.slice(0, 3).map((item) => {
           if (checked) {
-            return <Box>Text + anh</Box>;
+            return (
+              <Box>
+                <Image borderRadius={"10px"} src={item.image}></Image>
+                <Text>{item.title} </Text>
+              </Box>
+            );
           }
           return (
             <Button

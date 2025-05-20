@@ -41,9 +41,9 @@ export const Gallery = () => {
           Ảnh
         </Text>
         <Box display={"flex"} width={"250px"} gap={6}>
-          <Image src="src/assets/image3.jpg" alt="Ảnh 1" />
-          <Image src="src/assets/image3.jpg" alt="Ảnh 2" />
-          <Image src="src/assets/image3.jpg" alt="Ảnh 2" />
+          <Image src="/assets/image3.jpg" alt="Ảnh 1" />
+          <Image src="/assets/image3.jpg" alt="Ảnh 2" />
+          <Image src="/assets/image3.jpg" alt="Ảnh 2" />
         </Box>
       </Box>
     </Box>

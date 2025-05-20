@@ -10,7 +10,7 @@ const list = [
     bgColor: "rgb(102, 102, 153)",
   },
   {
-    title: "Sitkom",
+    title: "Sitcom",
     bgColor: "rgb(27, 133, 108)",
   },
   {
@@ -84,15 +84,16 @@ export const Card = () => {
                 fontSize={"small"}
                 fontWeight={"medium"}
               >
-                Xem chủ đề{" "}
+                Xem chủ đề &gt
               </Link>
             </Box>
           </Box>
         ))}
         {list.length > 5 && (
-          <Box bg={"grey"} borderRadius={"15px"} width={"200px"} minH={"138px"}>
+          <Box bg={"grey"} borderRadius={"15px"} width={"200px"} minH={"80px"}>
             <Link
-              fontSize={"xl"}
+           color={"white"}
+              fontSize={"s"}
               fontWeight={"semibold"}
               padding={"20px"}
               href={""}

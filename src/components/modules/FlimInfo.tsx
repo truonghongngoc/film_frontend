@@ -4,21 +4,31 @@ import { IconStar } from "../elements/Icons";
 const listTopFilm = [
   {
     number: "1",
-    image: "src/assets/image2.jpeg",
+    image: "/assets/image2.jpeg",
     title: "Chuyện đời bác sĩ nội trú ",
     description: "Resident Playbook ",
+    tag1: "T13",
+    tag2: "Phần 1",
+    tag3: "Tập 12 ",
+  },
+
+  {
+    number: "2",
+    image: "/assets/phim4.webp",
+    title: "Khỏe trước yêu sau  ",
+    description: "Pump up the healthy love  ",
     tag1: "T13",
     tag2: "Phần 1",
     tag3: "Tập 8",
   },
   {
-    number: "2",
-    image: "src/assets/image2.jpeg",
-    title: "Chuyện đời bác sĩ nội trú ",
-    description: "Resident Playbook ",
+    number: "3",  
+    image: "/assets/phim5.webp",
+    title: "Khom lưng  ",
+    description: "The prisoner of beauty   ",
     tag1: "T13",
     tag2: "Phần 1",
-    tag3: "Tập 8",
+    tag3: "Tập 15 ",
   },
 ];
 
@@ -87,8 +97,10 @@ export const FlimInfo = () => {
         <Box marginBottom={"12px"} display={"flex"} gap={2}>
           {["Chính kịch", "Tình cảm ", "Hài ", "Lãng mạn "].map((item) => (
             <Link
+              _hover={{ color: "#ffd875" }}
               color={"white"}
               bg={"#ffffff10"}
+              textDecoration={"none"}
               padding={"6px"}
               height={"26px"}
               borderRadius={"4px"}
@@ -230,11 +242,11 @@ export const FlimInfo = () => {
                 borderRadius={"40px"}
                 width={"80px"}
                 height={"80px"}
-                src={"src/assets/image1.jpg"}
+                src={"src/assets/actor2.webp"}
                 marginBottom={"10px"}
               ></Image>
               <Text color={"#fff"} fontWeight={"400"} fontSize={"16px"}>
-                Kim Hye-ja
+                Liu Yuning
               </Text>
             </Box>
             <Box>
@@ -242,11 +254,11 @@ export const FlimInfo = () => {
                 borderRadius={"40px"}
                 width={"80px"}
                 height={"80px"}
-                src={"src/assets/image1.jpg"}
+                src={"src/assets/actor3.webp"}
                 marginBottom={"10px"}
               ></Image>
               <Text color={"#fff"} fontWeight={"400"} fontSize={"16px"}>
-                Kim Hye-ja
+                Xuan Lu
               </Text>
             </Box>
             <Box>
@@ -254,11 +266,11 @@ export const FlimInfo = () => {
                 borderRadius={"40px"}
                 width={"80px"}
                 height={"80px"}
-                src={"src/assets/image1.jpg"}
+                src={"src/assets/actor4.webp"}
                 marginBottom={"10px"}
               ></Image>
               <Text color={"#fff"} fontWeight={"400"} fontSize={"16px"}>
-                Kim Hye-ja
+                Liu Duanduan
               </Text>
             </Box>
             <Box>
@@ -266,11 +278,11 @@ export const FlimInfo = () => {
                 borderRadius={"40px"}
                 width={"80px"}
                 height={"80px"}
-                src={"src/assets/image1.jpg"}
+                src={"src/assets/actor5.webp"}
                 marginBottom={"10px"}
               ></Image>
               <Text color={"#fff"} fontWeight={"400"} fontSize={"16px"}>
-                Kim Hye-ja
+                Liu Xiaoqing
               </Text>
             </Box>
           </Box>
@@ -309,11 +321,16 @@ export const FlimInfo = () => {
                 >
                   {active.number}
                 </Text>
-                <Box borderRadius={"10px"} bg={"#ffffff05"} display={"flex"}>
+                <Box
+                  borderRadius={"10px"}
+                  width={"300px"}
+                  bg={"#ffffff05"}
+                  display={"flex"}
+                >
                   <Image
                     borderRadius={"10px"}
                     width={"80px"}
-                    height={"120px"}
+                    height={"123px"}
                     src={active.image}
                   ></Image>
                   <Box padding={"20px 16px"}>

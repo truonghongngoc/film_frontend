@@ -4,31 +4,31 @@ import styled from "@emotion/styled";
 const list = [
   {
     id: 1,
-    image: "src/assets/image3.jpg",
-    pin: "PĐ. 10",
-    pin2: "TM. 8",
-    title: "Chặt giữ vận may  ",
-    description: "Catch your luck ",
+    image: "/assets/phim1.webp",
+    pin: "PĐ. 3 ",
+    pin2: "TM. 1",
+    title: "Mùa xuân tuổi trẻ   ",
+    description: "Spring of Youth  ",
   },
   {
     id: 2,
-    image: "src/assets/image3.jpg",
-    pin: "PĐ. 10",
+    image: "/assets/phim2.webp",
+    pin: "PĐ. 8 ",
     pin2: "TM. 8",
-    title: "Người hùng yếu đuối  ",
-    description: "Weak hero class ",
+    title: "Cung điện ma ám   ",
+    description: "The haunted palace ",
   },
   {
     id: 3,
-    image: "src/assets/image3.jpg",
-    pin: "PĐ. 10",
-    pin2: "TM. 8",
-    title: "Bảng thượng giai tế  ",
-    description: "Serendipity ",
+    image: "/assets/phim3.webp",
+    pin: "PĐ. 5 ",
+    pin2: "TM. 4 ",
+    title: "Khỏe trước yêu sau   ",
+    description: "Pump up the healthy love ",
   },
   {
     id: 4,
-    image: "src/assets/image3.jpg",
+    image: "/assets/image3.jpg",
     pin: "PĐ. 10",
     pin2: "TM. 8",
     title: "Quán ăn của ngài heo ",
@@ -94,7 +94,7 @@ export const ListFilm = () => {
                     boxSizing={"border-box"}
                     borderRadius="8px"
                     src={active.image}
-                    alt="Lãnh địa tự chiến"
+                   
                   />
                   {/* Badge */}
                   <Box display={"flex"}>
@@ -138,9 +138,11 @@ export const ListFilm = () => {
                 </Box>
 
                 {/* Text Info */}
-                <Box color="white" padding="10px 10px">
+                <Box color="white"  padding="10px 10px">
                   <Link
-                    _hover={{ color: "#FFD875" }}
+                    _hover={{ color: "#FFD875", textDecoration:"none"
+
+                    }}
                     color="white"
                     fontSize="16px"
                     fontWeight="semibold"
@@ -202,7 +204,7 @@ export const ListFilm = () => {
                     boxSizing={"border-box"}
                     borderRadius="8px"
                     src={active.image}
-                    alt="Lãnh địa tự chiến"
+                 
                   />
                   {/* Badge */}
                   <Box display={"flex"}>
@@ -248,7 +250,7 @@ export const ListFilm = () => {
                 {/* Text Info */}
                 <Box color="white" padding="10px 10px">
                   <Link
-                    _hover={{ color: "#FFD875" }}
+                    _hover={{ color: "#FFD875", textDecoration:"none" }}
                     color="white"
                     fontSize="16px"
                     fontWeight="semibold"
@@ -310,7 +312,7 @@ export const ListFilm = () => {
                     boxSizing={"border-box"}
                     borderRadius="8px"
                     src={active.image}
-                    alt="Lãnh địa tự chiến"
+                 
                   />
                   {/* Badge */}
                   <Box display={"flex"}>
@@ -356,7 +358,7 @@ export const ListFilm = () => {
                 {/* Text Info */}
                 <Box color="white" padding="10px 10px">
                   <Link
-                    _hover={{ color: "#FFD875" }}
+                    _hover={{ color: "#FFD875" , textDecoration:"none"}}
                     color="white"
                     fontSize="16px"
                     fontWeight="semibold"

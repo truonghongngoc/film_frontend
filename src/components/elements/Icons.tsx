@@ -69,3 +69,11 @@ export const IconPlus = (props: IconProps) => {
     </Icon>
   );
 };
+export const MaleGenderIcon = (props:IconProps) => (
+  <Icon viewBox="0 0 512 512" {...props}>
+    <path
+      fill="currentColor"
+      d="M416 0h-96c-17.7 0-32 14.3-32 32s14.3 32 32 32h26.7L327 113.7c-26.5-19.8-59.3-31.7-95-31.7-88.4 0-160 71.6-160 160s71.6 160 160 160 160-71.6 160-160c0-35.7-11.9-68.5-31.7-95L448 165.3V192c0 17.7 14.3 32 32 32s32-14.3 32-32v-96c0-35.3-28.7-64-64-64z"
+    />
+  </Icon>
+);

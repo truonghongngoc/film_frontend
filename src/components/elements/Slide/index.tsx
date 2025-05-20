@@ -7,31 +7,31 @@ const list = [
     title: "Mât vụ phụ hồ 1",
     description: "A working Man 1",
     node: "",
-    image: "src/assets/image1.jpg",
+    image: "/assets/image1.jpg",
   },
   {
     title: "Super Man",
     description: "Hero",
     node: "",
-    image: "src/assets/image2.jpeg",
+    image: "/assets/image2.jpeg",
   },
   {
     title: "Mât vụ phụ hồ 1",
     description: "A working Man 1",
     node: "",
-    image: "src/assets/image2.jpg",
+    image: "/assets/image2.jpg",
   },
   {
     title: "Mât vụ phụ hồ 1",
     description: "A working Man 1",
     node: "",
-    image: "src/assets/image3.jpg",
+    image: "/assets/image3.jpg",
   },
   {
     title: "Mât vụ phụ hồ 1",
     description: "A working Man 1",
     node: "",
-    image: "src/assets/image6.jpg",
+    image: "/assets/image6.jpg",
   },
 ];
 
@@ -148,7 +148,7 @@ export const Slide = () => {
             width={"70px"}
             h={"70px"}
           >
-            <Image width={"21px"} src="src/assets/play-button.png"></Image>
+            <Image width={"21px"} src="/assets/play-button.png"></Image>
           </Button>
           <Box
             width={"140px"}

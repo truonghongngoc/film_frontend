@@ -18,22 +18,26 @@ import {
 import { useState } from "react";
 import { BiInfinite } from "react-icons/bi";
 
+import { FaMars } from "react-icons/fa";
+
 const listComment = [
   {
-    image: "src/assets/image2.jpeg",
+    feeling: "Very good ",
+    image: "/ assets/image2.jpeg",
     name: "Chloe",
-    description: "hehehe",
+    description: "Phim hay ",
   },
   {
-    image: "src/assets/image4.jpg",
+    feeling: "Tuyệt vời ",
+    image: "/assets/image4.jpg",
     name: "Mono",
-    description: "hehehe",
+    description: "Sắp ra tập mới chưa shop ",
   },
 ];
 
 export const Comment = () => {
   const [tab, setTab] = useState("1");
-
+  const [checked, setChecked] = useState(false);
   return (
     <Box
       flexDirection={"column"}
@@ -127,13 +131,28 @@ export const Comment = () => {
               justifyContent={"space-between"}
               display={"flex"}
             >
-              <Box gap={3} display={"flex"}>
-                <Switch.Root>
+              <Box
+                display={"inline-flex"}
+                alignItems={"center"}
+                gap={"2"}
+                boxSizing={"border-box"}
+                justifyContent={"flex-end"}
+                // flex={1}
+              >
+                <Switch.Root
+                  checked={checked}
+                  onCheckedChange={(e) => setChecked(e.checked)}
+                  colorPalette={"yellow"}
+                  border={checked ? "1px solid #FFD875" : "1px solid #fff"}
+                  borderRadius={"full"}
+                  size={"sm"}
+                >
                   <Switch.HiddenInput />
-                  <Switch.Control />
+                  <Switch.Control bgColor={"unset"}>
+                    <Switch.Thumb bgColor={checked ? " #FFD875" : "#fff"} />
+                  </Switch.Control>
                 </Switch.Root>
-
-                <Text fontSize={"14px"} color={"#fff"}>
+                <Text color={"#fff"} fontSize={"15px"}>
                   Tiết lộ ?
                 </Text>
               </Box>
@@ -141,7 +160,7 @@ export const Comment = () => {
               <Box
                 color={"#ffd875"}
                 gap={"3"}
-                justifyContent={"flex-end"}
+                justifyContent={"flex-start"}
                 display={"flex"}
               >
                 <Text>Gửi </Text>
@@ -245,7 +264,88 @@ export const Comment = () => {
             </Box>
           ))}
         </Tabs.Content>
-        <Tabs.Content value="2">Manage your projects</Tabs.Content>
+        <Tabs.Content value="2">
+          {listComment.slice(0, 3).map((active) => (
+            <Box gap={"6"} margin={"30px 0"} display={"flex"}>
+              <Box>
+                <Image
+                  borderRadius={"40px"}
+                  width={"50px"}
+                  height={"50px"}
+                  src={active.image}
+                  marginBottom={"10px"}
+                ></Image>
+              </Box>
+              <Box>
+                <Box
+                  justifyContent={"flex-start"}
+                  alignItems={"center"}
+                  marginBottom={"8px"}
+                  gap={3}
+                  display={"flex"}
+                >
+                  <Button
+                    size={"2xs"}
+                    fontSize={"12px"}
+                    color={"#fff"}
+                    alignItems={"center"}
+                    borderRadius={"32px"}
+                    bg={"#3556b6"}
+                  >
+                    {active.feeling}{" "}
+                  </Button>
+                  <Text fontSize={"14px"} fontWeight={"500"} color={"#fff"}>
+                    {active.name}
+                  </Text>
+                  <Icon color="#ffd875" as={FaMars} boxSize={5} />
+                  <Text color={"#aaa"} fontSize={"10px"}>
+                    2 giờ trước{" "}
+                  </Text>
+                </Box>
+                <Box marginBottom={"10px"}>
+                  <Text color={"#aaa"} fontSize={"14px"}>
+                    {active.description}
+                  </Text>
+                </Box>
+                <Box justifyItems={"center"} gap={6} display={"flex"}>
+                  <Box display={"flex"} gap={2}>
+                    <Icon
+                      _hover={{ bg: "green" }}
+                      borderRadius={"15px"}
+                      bg={"grey"}
+                      as={ChevronUpIcon}
+                    ></Icon>
+                    <Icon
+                      _hover={{ bg: "red" }}
+                      borderRadius={"15px"}
+                      bg={"grey"}
+                      as={ChevronDownIcon}
+                    ></Icon>
+                  </Box>
+                  <Box
+                    _hover={{ color: "#fff" }}
+                    display={"flex"}
+                    alignItems={"center"}
+                  >
+                    <Icon color={"#aaa"} as={Reply}></Icon>
+                    <Text color={"#aaa"} fontSize={"12px"}>
+                      Trả lời{" "}
+                    </Text>
+                  </Box>
+                  <Box
+                    color={"#aaa"}
+                    alignItems={"center"}
+                    gap={2}
+                    display={"flex"}
+                  >
+                    <Text>...</Text>
+                    <Text fontSize={"12px"}>Thêm</Text>
+                  </Box>
+                </Box>
+              </Box>
+            </Box>
+          ))}
+        </Tabs.Content>
       </Tabs.Root>
     </Box>
   );

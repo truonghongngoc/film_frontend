@@ -6,7 +6,6 @@ import {
   InputGroup,
   Link,
   Menu,
-  NativeSelect,
   Portal,
   Text,
 } from "@chakra-ui/react";
@@ -48,7 +47,7 @@ export const Header = () => {
       <MenuDrawer></MenuDrawer>
       <Box>
         <Link href="/">
-          <Image src={"src/assets/logo.svg"} width={"120px"}></Image>
+          <Image src={"/assets/logo.svg"} width={"120px"}></Image>
         </Link>
       </Box>
       <InputGroup
@@ -209,7 +208,7 @@ export const Header = () => {
           xl: "flex",
         }}
       >
-        <Image width={"15px"} src={"src/assets/user.png"}></Image>
+        <Image width={"15px"} src={"/assets/user.png"}></Image>
         <Text color={"black"}>Thành viên</Text>
       </Button>
     </Box>

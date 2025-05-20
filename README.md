@@ -56,3 +56,11 @@ export default tseslint.config({
 })
 ```
 >>>>>>> 041abdb (film_fe)
+
+
+Todo :
+
+1. Sửa lại tên các file image
+2. cập nhật dữ liệu cho đẹp trên giao diện
+3. làm tab đánh giá
+4. làm phần Phụ đề
