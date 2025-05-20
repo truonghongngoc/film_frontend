@@ -52,7 +52,7 @@ export const FlimInfo = () => {
             borderRadius={"10px"}
             width={"150px"}
             height={"220px"}
-            src={"src/assets/image4.jpg"}
+            src={"/assets/image4.jpg"}
           ></Image>
           <Text
             mt={"30px"}
@@ -230,7 +230,7 @@ export const FlimInfo = () => {
                 borderRadius={"40px"}
                 width={"80px"}
                 height={"80px"}
-                src={"src/assets/image1.jpg"}
+                src={"/assets/image1.jpg"}
                 marginBottom={"10px"}
               ></Image>
               <Text color={"#fff"} fontWeight={"400"} fontSize={"16px"}>
@@ -242,7 +242,7 @@ export const FlimInfo = () => {
                 borderRadius={"40px"}
                 width={"80px"}
                 height={"80px"}
-                src={"src/assets/actor2.webp"}
+                src={"/assets/actor2.webp"}
                 marginBottom={"10px"}
               ></Image>
               <Text color={"#fff"} fontWeight={"400"} fontSize={"16px"}>
@@ -254,7 +254,7 @@ export const FlimInfo = () => {
                 borderRadius={"40px"}
                 width={"80px"}
                 height={"80px"}
-                src={"src/assets/actor3.webp"}
+                src={"/assets/actor3.webp"}
                 marginBottom={"10px"}
               ></Image>
               <Text color={"#fff"} fontWeight={"400"} fontSize={"16px"}>
@@ -266,7 +266,7 @@ export const FlimInfo = () => {
                 borderRadius={"40px"}
                 width={"80px"}
                 height={"80px"}
-                src={"src/assets/actor4.webp"}
+                src={"/assets/actor4.webp"}
                 marginBottom={"10px"}
               ></Image>
               <Text color={"#fff"} fontWeight={"400"} fontSize={"16px"}>
