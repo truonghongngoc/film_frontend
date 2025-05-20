@@ -1,3 +1,4 @@
+import { images } from "../../assets";
 import {
   Box,
   Switch,
@@ -22,14 +23,14 @@ import { FaMars } from "react-icons/fa";
 
 const listComment = [
   {
-    feeling: "Very good ",
-    image: "/ assets/image2.jpeg",
+    feeling: "Very good",
+    image: images.image2Jpeg,
     name: "Chloe",
     description: "Phim hay ",
   },
   {
     feeling: "Tuyệt vời ",
-    image: "/assets/image4.jpg",
+    image: images.image4,
     name: "Mono",
     description: "Sắp ra tập mới chưa shop ",
   },

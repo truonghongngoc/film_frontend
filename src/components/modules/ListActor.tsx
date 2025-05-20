@@ -1,23 +1,24 @@
+import { images } from "../../assets";
 import { Box, Text, Image, Link } from "@chakra-ui/react";
 
 const list = [
   {
-    image: "/assets/image2.jpeg",
+    image: "/assets/image1.jpg",
     name: "Hong Hae In", //ten dv
     nameReal: "hehehe",
   },
   {
-    image: "/assets/image2.jpeg",
+    image: images.image2Jpeg,
     name: "Hong Hae In", //ten dv
     nameReal: "hehehe",
   },
   {
-    image: "/assets/image2.jpeg",
+    image: images.image2Jpeg,
     name: "Hong Hae In", //ten dv
     nameReal: "hehehe",
   },
   {
-    image: "/assets/image2.jpeg",
+    image: images.image2Jpeg,
     name: "Hong Hae In", //ten dv
     nameReal: "hehehe",
   },

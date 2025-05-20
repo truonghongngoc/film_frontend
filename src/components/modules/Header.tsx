@@ -13,6 +13,7 @@ import { LuSearch } from "react-icons/lu";
 import { AiFillCaretDown } from "react-icons/ai";
 import { MenuDrawer } from "./MenuDrawer";
 import { useEffect, useState } from "react";
+import { images } from "../../assets";
 
 export const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -47,7 +48,7 @@ export const Header = () => {
       <MenuDrawer></MenuDrawer>
       <Box>
         <Link href="/">
-          <Image src={"/assets/logo.svg"} width={"120px"}></Image>
+          <Image src={images.logo} width={"120px"}></Image>
         </Link>
       </Box>
       <InputGroup

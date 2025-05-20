@@ -1,10 +1,11 @@
 import { Box, Text, Image, Button, Link, Icon } from "@chakra-ui/react";
 import { IconStar } from "../elements/Icons";
+import { images } from "../../assets";
 
 const listTopFilm = [
   {
     number: "1",
-    image: "/assets/image2.jpeg",
+    image: images.image2Jpeg,
     title: "Chuyện đời bác sĩ nội trú ",
     description: "Resident Playbook ",
     tag1: "T13",
@@ -14,7 +15,7 @@ const listTopFilm = [
 
   {
     number: "2",
-    image: "/assets/phim4.webp",
+    image: images.phim4,
     title: "Khỏe trước yêu sau  ",
     description: "Pump up the healthy love  ",
     tag1: "T13",
@@ -22,8 +23,8 @@ const listTopFilm = [
     tag3: "Tập 8",
   },
   {
-    number: "3",  
-    image: "/assets/phim5.webp",
+    number: "3",
+    image: images.phim5,
     title: "Khom lưng  ",
     description: "The prisoner of beauty   ",
     tag1: "T13",
@@ -52,7 +53,7 @@ export const FlimInfo = () => {
             borderRadius={"10px"}
             width={"150px"}
             height={"220px"}
-            src={"src/assets/image4.jpg"}
+            src={images.image3}
           ></Image>
           <Text
             mt={"30px"}
@@ -230,7 +231,7 @@ export const FlimInfo = () => {
                 borderRadius={"40px"}
                 width={"80px"}
                 height={"80px"}
-                src={"src/assets/image1.jpg"}
+                src={"/assets/image1.jpg"}
                 marginBottom={"10px"}
               ></Image>
               <Text color={"#fff"} fontWeight={"400"} fontSize={"16px"}>
@@ -242,7 +243,7 @@ export const FlimInfo = () => {
                 borderRadius={"40px"}
                 width={"80px"}
                 height={"80px"}
-                src={"src/assets/actor2.webp"}
+                src={images.actor2}
                 marginBottom={"10px"}
               ></Image>
               <Text color={"#fff"} fontWeight={"400"} fontSize={"16px"}>
@@ -254,7 +255,7 @@ export const FlimInfo = () => {
                 borderRadius={"40px"}
                 width={"80px"}
                 height={"80px"}
-                src={"src/assets/actor3.webp"}
+                src={images.actor3}
                 marginBottom={"10px"}
               ></Image>
               <Text color={"#fff"} fontWeight={"400"} fontSize={"16px"}>
@@ -266,7 +267,7 @@ export const FlimInfo = () => {
                 borderRadius={"40px"}
                 width={"80px"}
                 height={"80px"}
-                src={"src/assets/actor4.webp"}
+                src={images.actor4}
                 marginBottom={"10px"}
               ></Image>
               <Text color={"#fff"} fontWeight={"400"} fontSize={"16px"}>
@@ -278,7 +279,7 @@ export const FlimInfo = () => {
                 borderRadius={"40px"}
                 width={"80px"}
                 height={"80px"}
-                src={"src/assets/actor5.webp"}
+                src={images.actor5}
                 marginBottom={"10px"}
               ></Image>
               <Text color={"#fff"} fontWeight={"400"} fontSize={"16px"}>
