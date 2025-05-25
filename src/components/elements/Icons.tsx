@@ -69,7 +69,7 @@ export const IconPlus = (props: IconProps) => {
     </Icon>
   );
 };
-export const MaleGenderIcon = (props:IconProps) => (
+export const MaleGenderIcon = (props: IconProps) => (
   <Icon viewBox="0 0 512 512" {...props}>
     <path
       fill="currentColor"
@@ -77,3 +77,20 @@ export const MaleGenderIcon = (props:IconProps) => (
     />
   </Icon>
 );
+export const StarIcon = (props: IconProps) => {
+  <Icon {...props}>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="32"
+      height="32"
+      viewBox="0 0 32 32"
+      fill="none"
+    >
+      <path
+        d="M30.36 14.63C30.94 14.06 31.15 13.23 30.9 12.45C30.65 11.67 29.99 11.12 29.18 11L21.46 9.88C21.46 9.88 21.38 9.85 21.37 9.81L17.92 2.81C17.56 2.08 16.83 1.62 16.01 1.62C15.19 1.62 14.46 2.07 14.1 2.81L10.65 9.81C10.65 9.81 10.6 9.87 10.55 9.88L2.83001 11C2.02001 11.12 1.37001 11.67 1.11001 12.45C0.860006 13.23 1.06001 14.06 1.65001 14.63L7.24001 20.08C7.24001 20.08 7.28001 20.15 7.28001 20.19L5.96001 27.88C5.82001 28.68 6.15001 29.48 6.81001 29.96C7.47001 30.44 8.33001 30.5 9.05001 30.12L15.96 26.49C15.96 26.49 16.04 26.47 16.08 26.49L22.99 30.12C23.3 30.29 23.64 30.37 23.98 30.37C24.42 30.37 24.86 30.23 25.23 29.96C25.89 29.48 26.21 28.68 26.08 27.88L24.76 20.19C24.76 20.19 24.76 20.11 24.8 20.08L30.39 14.63H30.36Z"
+        fill="currentColor"
+      ></path>
+    </svg>
+  </Icon>;
+  
+};
