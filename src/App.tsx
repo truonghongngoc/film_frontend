@@ -3,6 +3,7 @@ import { Toaster } from "react-hot-toast";
 import Home from "./components/pages/Home";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { DetailPage } from "./components/pages/Detail";
+import MoviePage from "./components/pages/Movie";
 
 const router = createBrowserRouter([
   {
@@ -13,6 +14,10 @@ const router = createBrowserRouter([
     path: "/:id",
     element: <DetailPage />,
   },
+  {
+    path: ":id/movie",
+    element: <MoviePage />,
+  }
 ]);
 function App() {
   return (

@@ -9,8 +9,11 @@ import { IconPlus } from "../elements/Icons";
 import { Comment } from "../modules/Comment";
 import { FlimInfo } from "../modules/FlimInfo";
 import { images } from "../../assets";
+import { useNavigate, useParams } from "react-router-dom";
 
 export const DetailPage = () => {
+  const navigate=useNavigate();
+  const { id } = useParams();
   return (
     <Layout>
       <Header></Header>
@@ -65,9 +68,12 @@ export const DetailPage = () => {
                 padding={"15px 32px"}
                 minH={"60px"}
                 color={"black"}
+                onClick={() => navigate(`/${id}/movie`)}
                 boxShadow={"0 5px 10px 5px rgba(255,218,125,.1)"}
               >
-                <Icon as={Play} boxSize={5} /> Xem ngay{" "}
+                <Icon as={Play} boxSize={5} 
+                
+                />  Xem ngay 
               </Button>
 
               <Box

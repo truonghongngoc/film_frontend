@@ -209,7 +209,7 @@ export const Header = () => {
           xl: "flex",
         }}
       >
-        <Image width={"15px"} src={"/assets/user.png"}></Image>
+        <Image width={"15px"} src={"src/assets/user.png"}></Image>
         <Text color={"black"}>Thành viên</Text>
       </Button>
     </Box>
